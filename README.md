@@ -11,6 +11,9 @@ Para instalar a versão do Angular 12.2.9, execute no terminal `npm install -g @
 Caso ocorra o erro 0308010C, não se preocupe, isso ocorre devido à conflitos de versão do Node, basta executar os seguintes comandos no terminal, se for LINUX e macOS:` export NODE_OPTIONS=--openssl-legacy-provider `, se for Prompt de comando do Windows:` set NODE_OPTIONS=--openssl-legacy-provider ` ou Windows PowerShell: ` $env:NODE_OPTIONS = "--openssl-legacy-provider" `
 
 
+## Erro An unhandled exception occurred: Cannot find module '@angular-devkit/build-angular/package.json', só se caso ocorrer!!!
+Para corrigir o erro basta executar os seguintes códigos no terminal: 1° ` npm cache clean --force `; 2° `npm install`; esse erro geralmente ocorre quando há um conflito nas versões das dependências no seu projeto. O npm tenta resolver as dependências necessárias para o seu projeto, mas encontra conflitos entre as versões especificadas nas diferentes dependências.
+
 ## Development server
 
 Execute `ng serve` para iniciar um servidor de desenvolvimento. Acesse `http://localhost:4200/` no navegador. O aplicativo será recarregado automaticamente se você modificar algum dos arquivos de origem.
