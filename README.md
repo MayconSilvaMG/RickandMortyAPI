@@ -10,6 +10,7 @@ Para instalar a versão do Angular 12.2.9, execute no terminal `npm install -g @
 
 Caso ocorra o erro 0308010C, não se preocupe, isso ocorre devido à conflitos de versão do Node, basta executar os seguintes comandos no terminal, se for LINUX e macOS:` export NODE_OPTIONS=--openssl-legacy-provider `, se for Prompt de comando do Windows:` set NODE_OPTIONS=--openssl-legacy-provider ` ou Windows PowerShell: ` $env:NODE_OPTIONS = "--openssl-legacy-provider" `
 
+
 ## Development server
 
 Execute `ng serve` para iniciar um servidor de desenvolvimento. Acesse `http://localhost:4200/` no navegador. O aplicativo será recarregado automaticamente se você modificar algum dos arquivos de origem.

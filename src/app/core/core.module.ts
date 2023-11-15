@@ -7,12 +7,12 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 @NgModule({
   declarations: [
-    //NavigationComponent
+    NavigationComponent
   ],
   imports: [
     CommonModule,
     CoreRoutingModule,
-    NavigationComponent
-  ],//exports:[NavigationComponent]
+  ],exports: [NavigationComponent]
 })
 export class CoreModule { }
+
